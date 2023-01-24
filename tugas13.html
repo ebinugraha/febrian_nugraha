@@ -51,14 +51,14 @@
         Mouse
       </button>
       <button
-      id="tombolHeadset"
+        id="tombolHeadset"
         class="w3-bar-item w3-button w3-hover-white w3-round-xxlarge tombol"
         onclick="openTab('headset','tombolHeadset')"
       >
         Headset
       </button>
       <button
-      id="tombolKeyboard"
+        id="tombolKeyboard"
         class="w3-bar-item w3-button w3-hover-white w3-round-xxlarge tombol"
         onclick="openTab('keyboard','tombolKeyboard')"
       >
@@ -66,20 +66,18 @@
       </button>
 
       <button
-      id="tombolProfile"
+        id="tombolProfile"
         class="w3-bar-item w3-button w3-hover-white w3-round-xxlarge tombol"
         onclick="openTab('profile', 'tombolProfile')"
       >
         Profile
       </button>
     </div>
-    
-
 
     <div id="home" class="halaman w3-animate-bottom" style="display: none">
-          <div style="display: flex">
-      <p></p>
-    </div>
+      <div style="display: flex">
+        <p></p>
+      </div>
       <div class="gatau">
         <img class="layer-1 image" src="img/background.png" />
         <img class="layer-2 image" src="img/meteor.png" />
@@ -172,7 +170,7 @@
       <div class="w3-row w3-animate-right" style="background-color: #c9c9c9">
         <div class="w3-twothird">
           <h1 style="color: black">NO SOFTWARE REQUIRED</h1>
-          <p style="color: black; font-size: x-large;">
+          <p style="color: black; font-size: x-large">
             When you're in a groove, the last thing you want to do is Alt+Tab
             out to adjust your keyboard settings. The SK650 combats that with an
             innovative On-the-fly System. Easily adjust per-key backlighting,
@@ -182,8 +180,7 @@
             resources.
           </p>
           <center>
-
-              <img src="img/shortcut.png" alt="">
+            <img src="img/shortcut.png" alt="" />
           </center>
         </div>
         <div class="w3-third">
@@ -316,7 +313,11 @@
       >
         <div class="w3-display-middle">
           <h3>Website Buatan</h3>
-          <img src="img/itsme.jpeg" style="object-fit: contain; width: 200px; margin-bottom: 20px;" alt="">
+          <img
+            src="img/itsme.jpeg"
+            style="object-fit: contain; width: 200px; margin-bottom: 20px"
+            alt=""
+          />
           <h3>Nama &nbsp;: Febrian</h3>
           <h3>Kelas &nbsp;: IF-6</h3>
           <h3>NIM &nbsp;: 10122202</h3>
@@ -337,23 +338,24 @@
 
       window.onscroll = function () {
         let Y = window.scrollY;
-
-        layer_1.style.transform = "translateY(" + Y / 1.5 + "px)";
-        layer_2.style.transform = "translateY(" + Y / 2 + "px)";
-        layer_3.style.transform = "translateY(" + Y / 1.5 + "px)";
-        layer_4.style.transform = "translateY(" + Y / 2 + "px)";
-        layer_5.style.transform = "translateY(" + Y / 3 + "px)";
+        if (Y < 900) {
+          layer_1.style.transform = "translateY(" + Y / 1.5 + "px)";
+          layer_2.style.transform = "translateY(" + Y / 2 + "px)";
+          layer_3.style.transform = "translateY(" + Y / 1.5 + "px)";
+          layer_4.style.transform = "translateY(" + Y / 2 + "px)";
+          layer_5.style.transform = "translateY(" + Y / 3 + "px)";
+        }
       };
 
       function openTab(halaman, tombol) {
         let i;
         let namaClass = document.getElementsByClassName("halaman");
-        let namaClassButton = document.getElementsByClassName("tombol")
+        let namaClassButton = document.getElementsByClassName("tombol");
 
         for (i = 0; i < namaClass.length; i++) {
           namaClass[i].style.display = "none";
-          namaClassButton[i].style.backgroundColor = ""
-          namaClassButton[i].style.color = "white"
+          namaClassButton[i].style.backgroundColor = "";
+          namaClassButton[i].style.color = "white";
         }
 
         document.getElementById(tombol).style.color = "#514c9c";
@@ -361,5 +363,75 @@
         document.getElementById(halaman).style.display = "block";
       }
     </script>
+
+    <div style="background-color: #1e1e27">
+      <div class="w3-row-padding">
+        <div class="w3-third w3-padding-16">
+          <h1>TOOLS</h1>
+          <ul style="margin-left: 15px">
+            <li>Laptop</li>
+            <li>Internet</li>
+            <li>Think</li>
+            <li>Music</li>
+            <li>Coffe</li>
+            <li>Leci</li>
+          </ul>
+        </div>
+        <div class="w3-third w3-padding-16">
+          <h1>REGIONAL WEBSITE</h1>
+          <ul style="margin-left: 15px">
+            <li>Asia Pacific</li>
+            <li>Europe</li>
+            <li>North America</li>
+            <li>Latin America</li>
+          </ul>
+        </div>
+        <div class="w3-third w3-padding-16">
+          <h1>Support</h1>
+          <p>
+            <a href="https://www.instagram.com/febrian_nugraha17/">
+              <img
+                src="img/instagram.png"
+                alt=""
+                style="height: 48px; width: 48px"
+              />
+            </a>
+            <a href="https://github.com/ebinugraha">
+              <img
+                src="img/github.png"
+                alt=""
+                style="
+                  height: 48px;
+                  width: 48px;
+                  margin-left: 15px;
+                  margin-right: 15px;
+                "
+              />
+            </a>
+            <a href="https://web.facebook.com/?_rdc=1&_rdr">
+              <img
+                src="img/facebook.png"
+                alt=""
+                style="height: 48px; width: 48px"
+              />
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-container" style="background-color: #1e1e27">
+    
+      <hr />
+      <div class="w3-row">
+        <div class="w3-twothird">
+          <h6 style="font-family: sans-serif; font-size: x-small;">
+            Website ini hanyalah rekayasa semata link asli ada disini <a href="https://www.coolermaster.com/">cooler master</a> ini hanya salah tugas 
+          </h6>
+        </div>
+        <div class="w3-third">
+          <h6 style="font-family: sans-serif; font-size: x-small;">© 2022 Muhamad Febrian Nugraha</h6>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
